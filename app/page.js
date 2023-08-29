@@ -12,7 +12,8 @@ export default function Home() {
           Watch anywhere. Cancel anytime.
         </p>
         
-        <Link>
+        <Link href="/register">
+          <button className="btn-danger w-[250px]">Get Started</button>
         </Link>
 
       </div>
