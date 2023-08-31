@@ -93,7 +93,7 @@ const Register = () => {
                 Register
               </button>
               <button
-                className="flex justify-between text-center items-center btn-danger"
+                className="flex justify-center text-center items-center btn-danger"
                 type="button"
                 onClick={handleProviderLogin}
               >
