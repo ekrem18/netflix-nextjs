@@ -11,9 +11,10 @@ export const getMovies = async (type) => {
   };
 
   export const getVideoKey = async (movieId) => {
-    const videoUrl = `https://api.themoviedb.org/3/movie/${type}?api_key=${API_KEY}`;
+    const videoUrl = `https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${API_KEY}`;
     const res = await fetch(videoUrl);
     if (!res.ok) {
+      // This will activate the closest `error.js` Error Boundary
       throw new Error("Failed to fetch data");
     }
     const data = await res.json();
