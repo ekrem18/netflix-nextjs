@@ -1,8 +1,11 @@
 import { getMovies } from "@/helpers/movieFunctions";
 import React from "react";
-import MovieSection from "./components/movieSection";
+import MovieSection from "./components/MovieSection";
 import HeroSection from "./components/HeroSection";
 
+export const metadata = {
+  title: "Movies",
+};
 const Movies = async () => {
   const movies = await getMovies("now_playing");
   console.log(movies);
